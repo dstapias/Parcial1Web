@@ -1,0 +1,14 @@
+{
+    "app.login": "Login",
+    "app.email": "Email",
+    "app.emailWarning": "Email must be valid",
+    "app.password": "Password",
+    "app.passwordWarning": "Password must be more than 8 characters",
+    "app.logButton": "Login",
+    "app.cycling": "Cycling",
+    "app.running": "Running",
+    "app.swimming": "Swimming",
+    "app.session": "{category} Session",
+    "app.sessionDesc": "Tour around the bay of ",
+    "app.closeModal": "Close"
+}

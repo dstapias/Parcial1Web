@@ -1,0 +1,14 @@
+{
+    "app.login": "Ingreso",
+    "app.email": "Correo Electrónico",
+    "app.emailWarning": "El correo debe ser válido",
+    "app.password": "Contraseña",
+    "app.passwordWarning": "La Contraseña debe ser mayor a 8 caracteres",
+    "app.logButton": "Ingresar",
+    "app.cycling": "Bicicleta",
+    "app.running": "Trote",
+    "app.swimming": "Nado",
+    "app.session": "Sesión de {category}",
+    "app.sessionDesc": "Recorrido alrededor de la bahía de ",
+    "app.closeModal": "Cerrar"
+}

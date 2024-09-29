@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button, Card } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
+
 
 function Login() {
   const navigate = useNavigate();
@@ -20,7 +22,7 @@ function Login() {
   };
 
   const enviarLogin = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     const form = e.currentTarget;
     if (form.checkValidity() === false) {
@@ -46,22 +48,24 @@ function Login() {
     >
       <Card style={{ width: "18rem", opacity: 0.9 }}>
         <Card.Body>
-          <Card.Title>Login</Card.Title>
+          <Card.Title>
+            <FormattedMessage id="app.login" defaultMessage="Internazionalizacion fallando" />
+          </Card.Title>
           <Form noValidate validated={validated} onSubmit={enviarLogin}>
             <Form.Group className="mb-3" controlId="formLogin">
-              <Form.Label>Email</Form.Label>
+              <FormattedMessage id="app.email" defaultMessage="Internazionalizacion fallando" />
               <Form.Control
                 required
                 type="email"
                 onChange={cambioUsername}
               />
               <Form.Control.Feedback type="invalid">
-                El correo debe ser válido
+                <FormattedMessage id="app.emailWarning" defaultMessage="Internazionalizacion fallando" />
               </Form.Control.Feedback>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formPassword">
-              <Form.Label>Password</Form.Label>
+              <FormattedMessage id="app.password" defaultMessage="Internazionalizacion fallando" />
               <Form.Control
                 required
                 type="password"
@@ -69,7 +73,7 @@ function Login() {
                 onChange={cambioPassword}
               />
               <Form.Control.Feedback type="invalid">
-                Contraseña debe ser de 8 caracteres
+                <FormattedMessage id="app.passwordWarning" defaultMessage="Internazionalizacion fallando" />
               </Form.Control.Feedback>
             </Form.Group>
 
@@ -78,7 +82,7 @@ function Login() {
                 style={{ backgroundColor: "#0000ff", borderColor: "#0000ff" }}
                 type="submit"
               >
-                Login
+                <FormattedMessage id="app.logButton" defaultMessage="Internazionalizacion fallando" />
               </Button>
             </div>
           </Form>
